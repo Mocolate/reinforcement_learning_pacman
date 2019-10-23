@@ -54,6 +54,16 @@ class QLearningAgent(ReinforcementAgent):
         util.raiseNotDefined()
 
 
+    def _setQValue(self, state, action, value):
+        """
+          Sets the value that getQValue returns for the given state and action.
+          The _ in front of the function name is the Pythonic way to indicates that 
+          it is a private function.
+        """
+        "*** YOUR CODE HERE ***"
+        util.raiseNotDefined()
+
+
     def computeValueFromQValues(self, state):
         """
           Returns max_action Q(state,action)
