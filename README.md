@@ -1,3 +1,3 @@
-# scd_23_10_19_AI_track
 
-Project for the AI track on the Software Concepts day of 23 October 2019.
+
+Project for the Coding Dojo on February 27th in Eindhoven.
