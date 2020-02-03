@@ -21,13 +21,13 @@ def test_when_there_are_no_legal_actions_then_compute_action_from_q_values_retur
     assert agent.computeActionFromQValues("state1") is None
 
 
-def test_when_there_are_legal_actions_then_compute_value_from_q_values_returns_the_highest_action():
+def test_when_there_are_legal_actions_then_compute_value_from_q_values_returns_the_action_with_the_highest_q_value():
     agent = AgentTest({"state1": ([1, 2, 3], [-1.0, -2.0, -3.0])})
 
     assert 1 == agent.computeActionFromQValues("state1")
 
 
-def test_when_there_are_legal_actions_witch_equal_best_q_value_then_compute_value_from_q_values_returns_the_highest_action():
+def test_when_there_are_legal_actions_with_equal_best_q_values_then_compute_value_from_q_values_returns_random_best_action():
     agent = AgentTest({"state1": ([1, 2, 3], [-1.0, -2.0, -1.0])})
 
     results = []

@@ -19,7 +19,7 @@ def test_get_q_value_returns_the_value_that_was_set():
     assert -1.0 == agent.getQValue(state=1, action="a")
 
 
-def test_set_q_value_does_not_accept_anything_else_than_float():
-    agent = QLearningAgent()
-    with pytest.raises(FloatingPointError):
-        agent._setQValue(state="S", action=0, value="Not Allowed")
+# def test_set_q_value_does_not_accept_anything_else_than_float():
+#     agent = QLearningAgent()
+#     with pytest.raises(FloatingPointError):
+#         agent._setQValue(state="S", action=0, value="Not Allowed")
